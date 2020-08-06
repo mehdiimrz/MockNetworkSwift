@@ -30,6 +30,8 @@ final class UrlSessionManager : NetworkingService{
     }
     
     
+    // MARK: - Protocol method implemention
+    
     func getHomeFeed(completion: @escaping (Result<HomeItem, Error>) -> Void) {
         
     }
