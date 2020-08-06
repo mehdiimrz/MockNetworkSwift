@@ -127,13 +127,21 @@
 		952F506624DC264E0002BD08 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				95533E4D24DC32F300DB78BC /* Endpoint.swift */,
+				95533E4F24DC478500DB78BC /* Enpoints */,
 				95533E4B24DC2FB700DB78BC /* AppUrls.swift */,
 				95533E4624DC2F2A00DB78BC /* HTTPMethod.swift */,
 				952F506824DC268E0002BD08 /* NetworkingService.swift */,
 				952F506A24DC27C20002BD08 /* UrlSessionManager.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		95533E4F24DC478500DB78BC /* Enpoints */ = {
+			isa = PBXGroup;
+			children = (
+				95533E4D24DC32F300DB78BC /* Endpoint.swift */,
+			);
+			path = Enpoints;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

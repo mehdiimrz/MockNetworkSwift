@@ -8,7 +8,11 @@
 
 import Foundation
 
-/// A protcol for defining endpoints
+/**
+ A protcol for defining endpoints
+ Creating new enpoint required to adopt to this protocol
+ The only required property is the path
+*/
 protocol Endpoint {
     
     /// Base Url of the endpoint. Defaull value defined in AppUrls
