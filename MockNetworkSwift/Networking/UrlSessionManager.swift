@@ -44,3 +44,57 @@ final class UrlSessionManager : NetworkingService{
     
 }
 
+extension UrlSessionManager {
+    
+    /**
+       Send the request using UrlSession
+
+       - Parameters:
+          - endpoint: Endpoint object
+          - completion: Completion handler returning ResultType
+     
+
+       - Returns: A UrlSessionManager which can handle requests
+       */
+    func fetch<V: Codable>(endpoint : Endpoint, completion : @escaping ((Result<V,ServerError>) -> Void)){
+        
+        
+        let task = self.session.dataTask(with: endpoint.request) { (data , response ,error) in
+            
+            guard error == nil else {
+                completion (.failure(.unknownError))
+                return
+            }
+            
+            guard let response = response as? HTTPURLResponse else{
+                completion(.failure(.unknownError))
+                return
+            }
+            
+            
+            guard 200..<300 ~= response.statusCode else {
+                completion(.failure(.init(code: response.statusCode)))
+                return
+            }
+            
+            do{
+                guard let data = data else{
+                    completion(.failure(.unknownError))
+                    return
+                }
+                
+                let value = try JSONDecoder().decode(V.self, from: data)
+                completion(.success(value))
+                
+            } catch{
+                
+                completion(.failure(.customError("Decoding Error")))
+            }
+        }
+        task.resume()
+    }
+    
+}
+
+
+
