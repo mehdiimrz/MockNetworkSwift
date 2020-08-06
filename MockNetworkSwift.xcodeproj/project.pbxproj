@@ -14,6 +14,8 @@
 		952F504924DC24BB0002BD08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 952F504824DC24BB0002BD08 /* Assets.xcassets */; };
 		952F504C24DC24BB0002BD08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952F504A24DC24BB0002BD08 /* LaunchScreen.storyboard */; };
 		952F505724DC24BB0002BD08 /* MockNetworkSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F505624DC24BB0002BD08 /* MockNetworkSwiftTests.swift */; };
+		952F506424DC25690002BD08 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F506224DC25690002BD08 /* HomeItem.swift */; };
+		952F506524DC25690002BD08 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F506324DC25690002BD08 /* Comment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		952F505224DC24BB0002BD08 /* MockNetworkSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MockNetworkSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		952F505624DC24BB0002BD08 /* MockNetworkSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkSwiftTests.swift; sourceTree = "<group>"; };
 		952F505824DC24BB0002BD08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		952F506224DC25690002BD08 /* HomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
+		952F506324DC25690002BD08 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		952F503E24DC24B90002BD08 /* MockNetworkSwift */ = {
 			isa = PBXGroup;
 			children = (
+				952F506124DC25690002BD08 /* Models */,
 				952F503F24DC24B90002BD08 /* AppDelegate.swift */,
 				952F504124DC24B90002BD08 /* SceneDelegate.swift */,
 				952F504324DC24B90002BD08 /* ViewController.swift */,
@@ -97,6 +102,15 @@
 				952F505824DC24BB0002BD08 /* Info.plist */,
 			);
 			path = MockNetworkSwiftTests;
+			sourceTree = "<group>";
+		};
+		952F506124DC25690002BD08 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				952F506224DC25690002BD08 /* HomeItem.swift */,
+				952F506324DC25690002BD08 /* Comment.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +214,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				952F506524DC25690002BD08 /* Comment.swift in Sources */,
 				952F504424DC24B90002BD08 /* ViewController.swift in Sources */,
+				952F506424DC25690002BD08 /* HomeItem.swift in Sources */,
 				952F504024DC24B90002BD08 /* AppDelegate.swift in Sources */,
 				952F504224DC24B90002BD08 /* SceneDelegate.swift in Sources */,
 			);
