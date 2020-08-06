@@ -34,10 +34,19 @@ final class UrlSessionManager : NetworkingService{
     
     func getHomeFeed(completion: @escaping (Result<HomeItem, ServerError>) -> Void) {
         
+        let homeEndpoint = HomeEndpoint()
+        fetch(endpoint: homeEndpoint) { (result : Result<HomeItem, ServerError>) in
+            completion(result)
+        }
+        
     }
     
     func getComments(withPostId postId: Int, completion: @escaping (Result<[Comment], ServerError>) -> Void) {
         
+        let comentEndpoint = CommentEndpoint()
+        fetch(endpoint: comentEndpoint) { (result : Result<[Comment], ServerError>) in
+            completion(result)
+        }
     }
     
   
