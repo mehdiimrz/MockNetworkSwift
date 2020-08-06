@@ -21,6 +21,7 @@
 		95533E4724DC2F2A00DB78BC /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95533E4624DC2F2A00DB78BC /* HTTPMethod.swift */; };
 		95533E4C24DC2FB700DB78BC /* AppUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95533E4B24DC2FB700DB78BC /* AppUrls.swift */; };
 		95533E4E24DC32F300DB78BC /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95533E4D24DC32F300DB78BC /* Endpoint.swift */; };
+		95533E5324DC487500DB78BC /* HomeEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95533E5224DC487500DB78BC /* HomeEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		95533E4624DC2F2A00DB78BC /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		95533E4B24DC2FB700DB78BC /* AppUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUrls.swift; sourceTree = "<group>"; };
 		95533E4D24DC32F300DB78BC /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		95533E5224DC487500DB78BC /* HomeEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				95533E4D24DC32F300DB78BC /* Endpoint.swift */,
+				95533E5224DC487500DB78BC /* HomeEndpoint.swift */,
 			);
 			path = Enpoints;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				95533E4724DC2F2A00DB78BC /* HTTPMethod.swift in Sources */,
 				952F506B24DC27C20002BD08 /* UrlSessionManager.swift in Sources */,
 				952F504024DC24B90002BD08 /* AppDelegate.swift in Sources */,
+				95533E5324DC487500DB78BC /* HomeEndpoint.swift in Sources */,
 				952F504224DC24B90002BD08 /* SceneDelegate.swift in Sources */,
 				95533E4C24DC2FB700DB78BC /* AppUrls.swift in Sources */,
 			);

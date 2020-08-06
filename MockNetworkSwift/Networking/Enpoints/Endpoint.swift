@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- A protcol for defining endpoints
+ A protocol for defining endpoints
  Creating new enpoint required to adopt to this protocol
  The only required property is the path
 */
