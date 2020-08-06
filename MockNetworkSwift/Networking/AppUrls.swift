@@ -18,7 +18,7 @@ public struct AppUrls {
     }
     
     /// Routes which added to the domain
-    private struct Routes{
+    struct Routes{
         static let api = "/api"
     }
     
