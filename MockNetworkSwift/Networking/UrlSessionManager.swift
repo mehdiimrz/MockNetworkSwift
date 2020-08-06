@@ -8,6 +8,8 @@
 
 import Foundation
 
+// We use final access level because there is no intent for override this class. So this class uses Static Method Dispatch.
+
 /// This manager handles requests using NSUrlSession
 final class UrlSessionManager : NetworkingService{
     
