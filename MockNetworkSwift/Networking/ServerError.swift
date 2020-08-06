@@ -16,7 +16,7 @@ enum ServerError : Error {
     case invalidCredentials
     case notFound
     case serverError
-    
+    case customError(String)
     
     /**
     Inititlize an error object based on the HTTP status code
@@ -55,6 +55,7 @@ extension ServerError: LocalizedError {
         case .invalidCredentials: return "Invalid Credentials"
         case .notFound: return "Not Found"
         case .serverError: return "Server Error"
+        default : return "Unkown Error"
         }
     }
     

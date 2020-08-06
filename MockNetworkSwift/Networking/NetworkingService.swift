@@ -17,7 +17,7 @@ protocol NetworkingService {
     - Parameters:
        - completion: Return HomeItem in Result
     */
-    func getHomeFeed(completion: @escaping (Result<HomeItem, Error>)->Void)
+    func getHomeFeed(completion: @escaping (Result<HomeItem, ServerError>)->Void)
     
     
     /**
@@ -27,6 +27,6 @@ protocol NetworkingService {
        - postId: Identifier of a post
        - completion: Return list of Comments in Result
     */
-    func getComments(withPostId postId : Int, completion: @escaping (Result<[Comment], Error>)->Void )
+    func getComments(withPostId postId : Int, completion: @escaping (Result<[Comment], ServerError>)->Void )
 
 }

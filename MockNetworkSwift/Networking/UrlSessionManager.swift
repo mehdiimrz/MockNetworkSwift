@@ -32,11 +32,11 @@ final class UrlSessionManager : NetworkingService{
     
     // MARK: - Protocol method implemention
     
-    func getHomeFeed(completion: @escaping (Result<HomeItem, Error>) -> Void) {
+    func getHomeFeed(completion: @escaping (Result<HomeItem, ServerError>) -> Void) {
         
     }
     
-    func getComments(withPostId postId: Int, completion: @escaping (Result<[Comment], Error>) -> Void) {
+    func getComments(withPostId postId: Int, completion: @escaping (Result<[Comment], ServerError>) -> Void) {
         
     }
     
