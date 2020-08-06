@@ -16,6 +16,7 @@
 		952F505724DC24BB0002BD08 /* MockNetworkSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F505624DC24BB0002BD08 /* MockNetworkSwiftTests.swift */; };
 		952F506424DC25690002BD08 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F506224DC25690002BD08 /* HomeItem.swift */; };
 		952F506524DC25690002BD08 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F506324DC25690002BD08 /* Comment.swift */; };
+		952F506924DC268E0002BD08 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F506824DC268E0002BD08 /* NetworkingService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		952F505824DC24BB0002BD08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		952F506224DC25690002BD08 /* HomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
 		952F506324DC25690002BD08 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		952F506824DC268E0002BD08 /* NetworkingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		952F503E24DC24B90002BD08 /* MockNetworkSwift */ = {
 			isa = PBXGroup;
 			children = (
+				952F506624DC264E0002BD08 /* Networking */,
 				952F506124DC25690002BD08 /* Models */,
 				952F503F24DC24B90002BD08 /* AppDelegate.swift */,
 				952F504124DC24B90002BD08 /* SceneDelegate.swift */,
@@ -111,6 +114,14 @@
 				952F506324DC25690002BD08 /* Comment.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		952F506624DC264E0002BD08 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				952F506824DC268E0002BD08 /* NetworkingService.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +228,7 @@
 				952F506524DC25690002BD08 /* Comment.swift in Sources */,
 				952F504424DC24B90002BD08 /* ViewController.swift in Sources */,
 				952F506424DC25690002BD08 /* HomeItem.swift in Sources */,
+				952F506924DC268E0002BD08 /* NetworkingService.swift in Sources */,
 				952F504024DC24B90002BD08 /* AppDelegate.swift in Sources */,
 				952F504224DC24B90002BD08 /* SceneDelegate.swift in Sources */,
 			);
