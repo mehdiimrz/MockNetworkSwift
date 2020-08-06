@@ -23,6 +23,7 @@
 		95533E4E24DC32F300DB78BC /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95533E4D24DC32F300DB78BC /* Endpoint.swift */; };
 		95533E5324DC487500DB78BC /* HomeEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95533E5224DC487500DB78BC /* HomeEndpoint.swift */; };
 		95533E5524DC4C9700DB78BC /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95533E5424DC4C9700DB78BC /* ServerError.swift */; };
+		95533E5724DC711900DB78BC /* CommentEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95533E5624DC711900DB78BC /* CommentEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		95533E4D24DC32F300DB78BC /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		95533E5224DC487500DB78BC /* HomeEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEndpoint.swift; sourceTree = "<group>"; };
 		95533E5424DC4C9700DB78BC /* ServerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerError.swift; sourceTree = "<group>"; };
+		95533E5624DC711900DB78BC /* CommentEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			children = (
 				95533E4D24DC32F300DB78BC /* Endpoint.swift */,
 				95533E5224DC487500DB78BC /* HomeEndpoint.swift */,
+				95533E5624DC711900DB78BC /* CommentEndpoint.swift */,
 			);
 			path = Enpoints;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				95533E5524DC4C9700DB78BC /* ServerError.swift in Sources */,
 				95533E4724DC2F2A00DB78BC /* HTTPMethod.swift in Sources */,
 				952F506B24DC27C20002BD08 /* UrlSessionManager.swift in Sources */,
+				95533E5724DC711900DB78BC /* CommentEndpoint.swift in Sources */,
 				952F504024DC24B90002BD08 /* AppDelegate.swift in Sources */,
 				95533E5324DC487500DB78BC /* HomeEndpoint.swift in Sources */,
 				952F504224DC24B90002BD08 /* SceneDelegate.swift in Sources */,
