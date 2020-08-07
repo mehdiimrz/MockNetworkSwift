@@ -43,7 +43,7 @@ final class UrlSessionManager : NetworkingService{
     
     func getComments(withPostId postId: Int, completion: @escaping (Result<[Comment], ServerError>) -> Void) {
         
-        let comentEndpoint = CommentEndpoint()
+        let comentEndpoint = CommentEndpoint(postId: postId)
         fetch(endpoint: comentEndpoint) { (result : Result<[Comment], ServerError>) in
             completion(result)
         }

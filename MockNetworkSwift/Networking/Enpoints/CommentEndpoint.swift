@@ -11,8 +11,20 @@ import Foundation
 /// Endpoint for requesting Comments
 struct CommentEndpoint : Endpoint{
     
+    private var postId : Int
+    
+    init(postId : Int){
+        self.postId = postId
+    }
+    
     var path: String{
         
         return "/comments"
+    }
+    
+    var queryParameters: [URLQueryItem]?{
+        
+        return [URLQueryItem(name: "postId", value: "\(postId)")]
+        
     }
 }
