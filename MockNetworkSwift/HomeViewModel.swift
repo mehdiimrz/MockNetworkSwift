@@ -15,10 +15,10 @@ class HomeViewModel{
     private let network : NetworkingService
     
     /// This closure will call after the viewmodel received homeItem object successfully
-    public var homeData : ((HomeItem)->Void)?
+    public var homeData : ((String)->Void)?
     
     /// This closure will call after the viewmodel received comments object successfully
-    public var commentData : (([Comment])->Void)?
+    public var commentData : (([String])->Void)?
     
     /// This closure will be called when any error occured
     public var error : ((Error)->Void)?
@@ -36,7 +36,8 @@ class HomeViewModel{
             DispatchQueue.main.async {
                 switch result{
                 case .success(let home):
-                    self.homeData?(home)
+                    let returnString = "Home item With id = \(home.id) and title = \(home.title)"
+                    self.homeData?(returnString)
                 case .failure(let error):
                     self.error?(error)
                 }
@@ -53,7 +54,10 @@ class HomeViewModel{
             DispatchQueue.main.async {
                 switch result{
                 case .success(let commnets):
-                    self.commentData?(commnets)
+                    
+                    let commentsString = commnets.map { "Comment With id = \($0.id) and text = \($0.text)" }
+                    
+                    self.commentData?(commentsString)
                 case .failure(let error):
                     self.error?(error)
                 }
