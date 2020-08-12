@@ -10,7 +10,7 @@ import Foundation
 
 
 /// Viewmodel for Home
-class HomeViewModel{
+final class HomeViewModel{
     
     private let network : NetworkingService
     
