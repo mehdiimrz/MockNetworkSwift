@@ -24,6 +24,7 @@
 		95533E5324DC487500DB78BC /* HomeEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95533E5224DC487500DB78BC /* HomeEndpoint.swift */; };
 		95533E5524DC4C9700DB78BC /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95533E5424DC4C9700DB78BC /* ServerError.swift */; };
 		95533E5724DC711900DB78BC /* CommentEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95533E5624DC711900DB78BC /* CommentEndpoint.swift */; };
+		AE08F9FB24E2E51B006ADA6B /* MockNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE08F9FA24E2E51B006ADA6B /* MockNetwork.swift */; };
 		AEBE221124E1B8BA00D3420B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE221024E1B8BA00D3420B /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		95533E5224DC487500DB78BC /* HomeEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEndpoint.swift; sourceTree = "<group>"; };
 		95533E5424DC4C9700DB78BC /* ServerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerError.swift; sourceTree = "<group>"; };
 		95533E5624DC711900DB78BC /* CommentEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentEndpoint.swift; sourceTree = "<group>"; };
+		AE08F9FA24E2E51B006ADA6B /* MockNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetwork.swift; sourceTree = "<group>"; };
 		AEBE221024E1B8BA00D3420B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 				952F504A24DC24BB0002BD08 /* LaunchScreen.storyboard */,
 				952F504D24DC24BB0002BD08 /* Info.plist */,
 				AEBE221024E1B8BA00D3420B /* HomeViewModel.swift */,
+				AE08F9FA24E2E51B006ADA6B /* MockNetwork.swift */,
 			);
 			path = MockNetworkSwift;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				AEBE221124E1B8BA00D3420B /* HomeViewModel.swift in Sources */,
 				952F504024DC24B90002BD08 /* AppDelegate.swift in Sources */,
 				95533E5324DC487500DB78BC /* HomeEndpoint.swift in Sources */,
+				AE08F9FB24E2E51B006ADA6B /* MockNetwork.swift in Sources */,
 				952F504224DC24B90002BD08 /* SceneDelegate.swift in Sources */,
 				95533E4C24DC2FB700DB78BC /* AppUrls.swift in Sources */,
 			);
