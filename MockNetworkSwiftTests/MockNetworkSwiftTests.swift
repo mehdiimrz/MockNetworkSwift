@@ -11,24 +11,42 @@ import XCTest
 
 class MockNetworkSwiftTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+   let mockViewModel = HomeViewModel(network: MockNetwork())
+    
+    
+    func testComments(){
+        let asyncExpectation = expectation(description: "Async comments block  executed")
+        
+        
+        mockViewModel.commentData = { (comments) in
+            
+            //Comment With id = (\($0.id) and text = \($0.text)
+            XCTAssert(comments[0] == "Comment With id = 1 and text = A",   "First comment test failed")
+            
+            XCTAssert(comments[1] == "Comment With id = 2 and text = B",   "Second comment test failed")
+            asyncExpectation.fulfill()
         }
+        
+        mockViewModel.getComments()
+        waitForExpectations(timeout: 1, handler: nil)
+
+    }
+    
+    func testHome(){
+        let asyncExpectation = expectation(description: "Async home block  executed")
+       
+        
+        mockViewModel.homeData = { (home) in
+            
+            //Comment With id = (\($0.id) and text = \($0.text)
+            XCTAssert(home == "Home item With id = 1 and title = Sample 1",   "Home data test failed")
+            
+            asyncExpectation.fulfill()
+        }
+        
+        mockViewModel.getHome()
+        waitForExpectations(timeout: 1, handler: nil)
+
     }
 
 }
